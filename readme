@@ -1,0 +1,15 @@
+#############################################################
+#  CancerEvol(version1.0)
+#  This program implements the Bayesian 
+#  phylogenetic model for gene duplication and deletion
+#
+#############################################################
+
+1. The source code is in the "src" folder.
+2. The Mac binary is in the "mac" folder.
+3. The windows executable is in the "windows" folder
+4. The example control and data files are in the "data" folder
+
+To compile the source code, open "makefile" and change "ARCHITECTURE ?= mac" to the platform (windows, mac, unix) of your computer. Then type make.
+
+To run the program, type ./cancer control. It will generate an output file .out in which the loglikelihood and model parameter m are sampled from the MCMC algorithm. The posterior distribution of the phylogenetic tree is saved in the output file .tre.
